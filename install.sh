@@ -7,7 +7,7 @@ cp -r dwm/Scripts/ ~/.config/dwm/
 cp dwm/wallpaper.jpg ~/.config/dwm/
 
 
-sudo pacman -Syyu
+sudo pacman -Syu
 sudo pacman -S hsetroot sxhkd xcompmgr ttf-roboto-mono network-manager-applet xorg-xsetroot
 
 

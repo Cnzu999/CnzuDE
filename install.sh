@@ -8,7 +8,7 @@ cp dwm/wallpaper.jpg ~/.config/dwm/
 
 
 sudo pacman -Syyu
-sudo pacman -S hsetroot volctl sxhkd xcompmgr ttf-roboto-mono nm-applet
+sudo pacman -S hsetroot sxhkd xcompmgr ttf-roboto-mono network-manager-applet xorg-xsetroot
 
 
 cd dwm && sudo make install
@@ -25,5 +25,3 @@ cd ../ && cp -r sxhkd/ ~/.config/
 cd ~/ && touch .xinitrc
 echo "exec dwm" >> .xinitrc 
 
-
-startx

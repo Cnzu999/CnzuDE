@@ -23,5 +23,10 @@ sudo make clean
 cd ../ && cp -r sxhkd/ ~/.config/ 
 
 cd ~/ && touch .xinitrc
-echo "exec dwm" >> .xinitrc 
+echo "exec dwm" > .xinitrc
+
+cd ~/
+
+
+startx
 

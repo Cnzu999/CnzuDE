@@ -1,11 +1,5 @@
-REQUIRED DEPENDENCIES
--- hsetroot
--- volctl
--- sxhkd
--- xcompmgr
--- ttf-roboto-mono
--- nm-applet
-
+PRE-REQUISITE
+--ArchLinux
 
 INSTALLATION
 -- run "sh ./install.sh"

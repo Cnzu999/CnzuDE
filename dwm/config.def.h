@@ -13,11 +13,11 @@ static const int showbar            = 1;     /* 0 means no bar */
 static const int topbar             = 1;     /* 0 means bottom bar */
 static const char *fonts[]          = { "Roboto Mono:size=11" };
 static const char dmenufont[]       = "Roboto Mono:size=11";
-static const char col_gray1[]       = "#222222";
-static const char col_gray2[]       = "#3b3c4b";
-static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#ffffff";
-static const char col_cyan[]        = "#da9589";
+static const char col_gray1[]       = "#423554";
+static const char col_gray2[]       = "#423554";
+static const char col_gray3[]       = "#f2e0d3";
+static const char col_gray4[]       = "#f2e0d3";
+static const char col_cyan[]        = "#d5302c";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -25,11 +25,11 @@ static const char *colors[][3]      = {
 };
 
 static const char *const autostart[] = {
-	"hsetroot", "-cover", "~/.config/dwm/wallpaper.jpg", NULL,
-	"sh", "-e", "~/.config/dwm/Scripts/ShowTime.sh", NULL,
+	"hsetroot", "-cover", "/usr/share/backgrounds/cnzn/wallpaper.jpg", NULL,
+	"sh", "-c", "while true; do      xsetroot -name ''$(date +%I:%M)'';      sleep 1;  done", NULL,
 	"volctl", NULL,
 	"nm-applet", NULL,
-	"xcompmgr", NULL,
+	"picom", NULL,
 	"sxhkd", NULL,
 	NULL
 };
